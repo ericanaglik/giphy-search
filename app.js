@@ -15,6 +15,10 @@ app.get('/greetings/:name', function (req, res) {
   res.render('greetings', {name: name});
 })
 
+app.get('/', function (req, res) {
+    res.render('home')
+})
+
 app.listen(3000, function () {
     console.log('Gif Search listening on port localhost:3000!')
 });
