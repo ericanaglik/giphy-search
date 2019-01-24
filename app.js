@@ -3,6 +3,8 @@ var app = express();
 var exphbs = require('express-handlebars')
 // REQUIRE HTTP MODULE
 var http = require('http');
+//INITIALIZE THE GIPHY-API LIBRARY
+var giphy = require('giphy-api')();
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
